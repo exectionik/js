@@ -1,5 +1,17 @@
-function total(heightS: number, lenghtS: number, heightT: number): number {
-    return((heightS + lenghtS) * (heightT/heightS))
+function equality(a: number, b: number, c: number): number {
+    
+    var helper : number = 0;   
+    if (a==b)
+    helper++;
+    if (a==c)
+    helper++;
+    if (b==c)
+    helper++;
+    if (helper == 1)
+    helper++;
+
+       
+    return(helper)
 }
-console.log(total(1, 2, 100))   
+console.log(equality(1, 1, 1))   
    
