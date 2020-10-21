@@ -1,10 +1,14 @@
-function isTriangle(a, b, c) {
-    var checker = false;
-    if (a * a == b * b + c * c || b * b == a * a + c * c || a * a + b * b == c * c)
-        checker = true;
-    if (a + b > c && a + c > b && c + b > a)
-        checker = true;
-    return (checker);
+function multiplyByLenght(a, b, c) {
+    var num = new Array(a, b, c);
+    for (var i = 0; i < num.length; i++) {
+        num[i] = num[i] * num.length;
+    }
+    return (num);
 }
-console.log(isTriangle(3, 4, 5));
+function oldarr(a, b, c) {
+    var old = new Array(a, b, c);
+    return (old);
+}
+console.log(oldarr(3, 4, 5));
+console.log(multiplyByLenght(3, 4, 5));
 //# sourceMappingURL=helloAppslabTs.js.map
